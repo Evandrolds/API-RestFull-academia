@@ -6,6 +6,8 @@ import com.evandro.ApiRestFull.model.form_dto.AlunoForm;
 import com.evandro.ApiRestFull.model.form_dto.AlunoUpdateForm;
 import com.evandro.ApiRestFull.repositories.AlunoRepository;
 import com.evandro.ApiRestFull.service.impl.AlunoServiceImpl;
+
+import java.net.URI;
 import java.util.List;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 /**
  *
@@ -44,6 +47,9 @@ public class AlunoController {
 
     @PostMapping
     public Aluno create(@Valid@RequestBody AlunoForm form) {
+        URI locale = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}").buildAndExpand(form.getNome()).toUri();
+
         return service.createForm(form);
     }
 

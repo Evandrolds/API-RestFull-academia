@@ -1,9 +1,7 @@
 package com.evandro.ApiRestFull.controller;
 
-import com.evandro.ApiRestFull.model.Aluno;
 import com.evandro.ApiRestFull.model.Matricula;
-import com.evandro.ApiRestFull.model.form_dto.MatriculaForm;
-import com.evandro.ApiRestFull.repositories.MatriculaRepository;
+import com.evandro.ApiRestFull.model.MatriculaForm;
 import com.evandro.ApiRestFull.service.impl.MatriculaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

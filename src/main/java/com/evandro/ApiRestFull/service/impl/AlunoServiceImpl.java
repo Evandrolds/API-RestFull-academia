@@ -7,6 +7,10 @@ import com.evandro.ApiRestFull.model.form_dto.AlunoUpdateForm;
 import com.evandro.ApiRestFull.repositories.AlunoRepository;
 import com.evandro.ApiRestFull.service.AlunoService;
 import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

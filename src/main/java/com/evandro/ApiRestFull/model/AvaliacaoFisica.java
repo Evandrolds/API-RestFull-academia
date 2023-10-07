@@ -21,8 +21,6 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "tb_avaliacao")
 public class AvaliacaoFisica {
     @Id

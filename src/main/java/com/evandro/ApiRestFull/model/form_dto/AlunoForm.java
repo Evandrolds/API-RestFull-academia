@@ -1,5 +1,6 @@
 package com.evandro.ApiRestFull.model.form_dto;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -14,8 +15,6 @@ import org.hibernate.validator.constraints.br.CPF;
  * @author Evandro
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class AlunoForm {
 
     @NotBlank(message = "Preencha o campo corretamente!")

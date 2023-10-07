@@ -1,4 +1,4 @@
-package com.evandro.ApiRestFull.model.form_dto;
+package com.evandro.ApiRestFull.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,8 +14,6 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class MatriculaForm {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

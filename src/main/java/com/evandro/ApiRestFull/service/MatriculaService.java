@@ -1,7 +1,7 @@
 package com.evandro.ApiRestFull.service;
 
 import com.evandro.ApiRestFull.model.Matricula;
-import com.evandro.ApiRestFull.model.form_dto.MatriculaForm;
+import com.evandro.ApiRestFull.model.MatriculaForm;
 import java.util.List;
 
 /**

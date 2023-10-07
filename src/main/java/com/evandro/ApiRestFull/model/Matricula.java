@@ -19,8 +19,6 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "tb_matricula")
 public class Matricula {
     @Id

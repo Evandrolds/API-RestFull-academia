@@ -22,8 +22,6 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "tb_aluno")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Aluno {

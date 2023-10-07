@@ -10,8 +10,6 @@ import lombok.NoArgsConstructor;
  * @author Evandro
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class AlunoUpdateForm {
     private String nome;
     private String bairro;
